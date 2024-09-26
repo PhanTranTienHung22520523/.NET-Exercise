@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Thiết kế mới cho thanh tìm kiếm */
+.search-container {
+    display: flex;
+    border: 2px solid #007bff;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 500px;
+    width: 100%;
+}
+
+.search-input {
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.search-btn {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-btn img {
+    width: 20px;
+    height: auto;
+}
+
+/* Menu chính với các tab dạng nút */
+nav {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+/* Thiết kế riêng cho từng mục trong menu */
+.nav-menu li:nth-child(5) a {  /* #Năng lượng tích cực */
+    background-color: #28a745;  /* Màu xanh lá năng động */
+}
+
+.nav-menu li:nth-child(6) a {  /* #Khám phá Việt Nam */
+    background-color: #ff8800;  /* Màu cam đại diện Việt Nam */
+}
+
+.nav-menu li:nth-child(7) a {  /* #Khám phá thế giới */
+    background-color: #17a2b8;  /* Màu xanh dương đại diện thế giới */
+}
+
+/* Hiệu ứng hover cho các tab */
+.nav-menu li a:hover {
+    background-color: #0056b3;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Các phần giữ nguyên như cũ */
+.main-content {
+    width: 70%;
+}
+
+.top-news {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-news img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.top-news h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+aside {
+    width: 25%;
+}
+
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Đối tác */
+.partners {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.partners h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partners-grid img {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
